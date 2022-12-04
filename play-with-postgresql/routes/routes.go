@@ -13,21 +13,21 @@ func RunServer() *gin.Engine {
 }
 
 func getAll(c *gin.Context) {
-	c.JSONP(200, "cum")
+	c.JSONP(200, "getAll")
 }
 
 func getOne(c *gin.Context) {
-	c.JSONP(200, "cum")
+	c.JSONP(200, "getOne")
 }
 
 func postOne(c *gin.Context) {
-	c.JSONP(200, "cum")
+	c.JSONP(200, "postOne")
 }
 
 func deleteOne(c *gin.Context) {
-	c.JSONP(200, "cum")
+	c.JSONP(200, "deleteOne")
 }
 
 func deleteAll(c *gin.Context) {
-	c.JSONP(200, "cum")
+	c.JSONP(200, "deleteAll")
 }
