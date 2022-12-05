@@ -4,7 +4,6 @@ import (
 	"log"
 	"os"
 
-	_ "github.com/jinzhu/gorm/dialects/postgres"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )

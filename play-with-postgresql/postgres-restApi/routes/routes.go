@@ -1,8 +1,6 @@
 package routes
 
 import (
-	"log"
-
 	"github.com/gin-gonic/gin"
 
 	"github.com/praveenmahasena647/restApi/dbs"
@@ -22,8 +20,7 @@ func RunServer() *gin.Engine {
 }
 
 func getAll(c *gin.Context) {
-	var someThing = dbs.DB.Find(&dbs.Person{})
-	log.Println(someThing)
+
 }
 
 func getOne(c *gin.Context) {
@@ -35,6 +32,8 @@ func postOne(c *gin.Context) {
 
 	c.BindJSON(data)
 	c.JSONP(200, "cum")
+	dbs.DB.Create(&data)
+
 }
 
 func deleteOne(c *gin.Context) {
