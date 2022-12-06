@@ -11,7 +11,7 @@ import (
 var (
 	DB  *gorm.DB
 	err error
-	uri string = ""
+	uri string = "host=localhost user=postgres password=abc123 dbname=cum port=5432"
 )
 
 func init() {
